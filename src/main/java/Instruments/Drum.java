@@ -2,20 +2,20 @@ package Instruments;
 
 import behaviours.IPlay;
 
-public class Drum{
+public class Drum extends Instrument{
 
     private int sticks;
     private int pedals;
     private int silencers;
     private int tuner;
-    private String play;
 
-    public Drum(int sticks, int pedals, int silencers, int tuner) {
-        this.sticks = sticks;
-        this.pedals = pedals;
-        this.silencers = silencers;
-        this.tuner = tuner;
-
+        public Drum(String description, double purchasePrice, double sellPrice, String material, String colour, String make, String model, Type type, int sticks,
+        int pedals, int silencers, int tuner) {
+            super(description, purchasePrice, sellPrice, material, colour, make, model, type);
+            this.sticks = sticks;
+            this.pedals = pedals;
+            this.silencers = silencers;
+            this.tuner = tuner;
 
     }
 

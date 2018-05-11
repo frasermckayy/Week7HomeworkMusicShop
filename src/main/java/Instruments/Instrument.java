@@ -2,20 +2,24 @@ package Instruments;
 
 
 import behaviours.IPlay;
+import itmes.Item;
 
-public abstract class Instrument implements IPlay {
+public abstract class Instrument extends Item implements IPlay {
 
    private String material;
    private String colour;
    private String type;
    private int age;
+   private String model;
 
 
-    public Instrument(String material, String colour, String type, int age) {
+    public Instrument(String material, String colour, String type, int age, String model) {
+        super(description, purchasePrice, sellPrice)
         this.material = material;
         this.colour = colour;
         this.type = type;
         this.age = age;
+        this.model = model;
     }
 
     public String getMaterial() {
@@ -32,5 +36,9 @@ public abstract class Instrument implements IPlay {
 
     public int getAge() {
         return age;
+    }
+
+    public String getModel() {
+        return model;
     }
 }
