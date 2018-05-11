@@ -1,21 +1,20 @@
-import Instruments.Drum;
+import Instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class DrumTest {
+public class PianoTest{
 
-    private Drum drum;
+    private Piano piano;
 
     @Before
     public void before() {
-        drum = new Drum(2, 2, 5 ,1);
+        piano = new Piano(88, 3, 1, 1);
     }
 
     @Test
     public void play(){
-        assertEquals("Bodum Tiss", drum.getPlay());
+        assertEquals("Chime Chime Chime", piano.getPlay());
     }
-
 }
