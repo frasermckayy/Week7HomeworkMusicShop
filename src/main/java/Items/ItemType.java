@@ -1,9 +1,9 @@
 package Items;
 
 public enum ItemType {
-        DRUMSTICK,
         GUITARSTRINGS,
-        SHEETMUSIC;
+        SHEETMUSIC,
+        PRECUSSION;
     }
 
 
