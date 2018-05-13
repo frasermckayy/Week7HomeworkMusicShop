@@ -10,7 +10,7 @@ public class DrumTest {
 
     @Before
     public void before() {
-        drum = new Drum(2, 2, 5 ,1);
+        drum = new Drum("metal", "red", type.PERCUSION, 14, 12 );
     }
 
     @Test

@@ -1,25 +1,27 @@
 package Instruments;
-
-
+import behaviours.ISell;
 import behaviours.IPlay;
-import itmes.Item;
 
-public abstract class Instrument extends Item implements IPlay {
+
+public abstract class Instrument implements IPlay, ISell {
 
    private String material;
    private String colour;
-   private String type;
+   private Type type;
    private int age;
    private String model;
+   private double buyPrice;
+   private double sellPrice;
 
 
-    public Instrument(String material, String colour, String type, int age, String model) {
-        super(description, purchasePrice, sellPrice)
+    public Instrument(String material, String colour, Type type, int age, String model, double buyPrice, double sellPrice) {
         this.material = material;
         this.colour = colour;
         this.type = type;
         this.age = age;
         this.model = model;
+        this.buyPrice = buyPrice;
+        this.sellPrice = sellPrice;
     }
 
     public String getMaterial() {
@@ -30,7 +32,7 @@ public abstract class Instrument extends Item implements IPlay {
         return colour;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
@@ -41,4 +43,14 @@ public abstract class Instrument extends Item implements IPlay {
     public String getModel() {
         return model;
     }
+
+    public double getBuyPrice(){
+        return buyPrice;
+    }
+
+    public double getSellPrice(){
+        return sellPrice;
+    }
+
+
 }
