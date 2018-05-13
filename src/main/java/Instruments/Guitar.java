@@ -3,32 +3,21 @@ package Instruments;
 public class Guitar extends Instrument{
 
     private int strings;
-    private int music;
-    private int tuner;
 
 
 
-    public Guitar(String description, double purchasePrice, double sellPrice, String material, String colour, String make, String model, Type type, int sticks,
-                int pedals, int silencers, int tuner) {
-        super(description, purchasePrice, sellPrice, material, colour, make, model, type);
+
+    public Guitar(String material, String colour, Type type, int age, String model, double buyPrice, double sellPrice, int strings ) {
+        super(material, colour, type, age, model, buyPrice, sellPrice);
         this.strings = strings;
-        this.music = music;
-        this.tuner = tuner;
+
     }
 
     public int getStrings() {
         return strings;
     }
 
-    public int getMusic() {
-        return music;
-    }
-
-    public int getTuner() {
-        return tuner;
-    }
-
-    public String getPlay(){
+    public String Play(){
         return "Strum Strum";
     }
 }

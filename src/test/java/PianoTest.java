@@ -19,4 +19,14 @@ public class PianoTest{
     public void play(){
         assertEquals("Chime Chime Chime", piano.Play());
     }
+
+    @Test
+    public void getKeys(){
+        assertEquals(88, piano.getKeys());
+    }
+
+    @Test
+    public void getPedals(){
+        assertEquals(3, piano.getPedals());
+    }
 }
