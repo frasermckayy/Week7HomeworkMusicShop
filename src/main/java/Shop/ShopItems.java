@@ -4,11 +4,11 @@ import behaviours.ISell;
 
 import java.util.ArrayList;
 
-  public class Shop {
+  public class ShopItems {
 
      private ArrayList<ISell> stock;
 
-     public Shop() {
+     public ShopItems() {
          this.stock = new ArrayList<>();
     }
 
@@ -19,7 +19,6 @@ import java.util.ArrayList;
     public void addStock(ISell item) {
           this.stock.add(item);
       }
-
 
       public void removeStock(ISell item) {
           this.stock.remove(item);

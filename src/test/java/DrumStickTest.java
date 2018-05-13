@@ -11,7 +11,7 @@ public class DrumStickTest {
 
     @Before
     public void before() {
-        drumStick = new DrumStick(2.00, 3.00, ItemType.PRECUSSION, "brand");
+        drumStick = new DrumStick(2.00, 3.00, ItemType.DRUMSTICKS, "brand");
 
     }
 
@@ -22,7 +22,7 @@ public class DrumStickTest {
 
     @Test
     public void canGetItemType(){
-        assertEquals(ItemType.PRECUSSION, drumStick.getItemType());
+        assertEquals(ItemType.DRUMSTICKS, drumStick.getItemType());
     }
 
     @Test
