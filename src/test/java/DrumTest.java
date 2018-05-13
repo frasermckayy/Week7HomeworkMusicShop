@@ -11,7 +11,7 @@ public class DrumTest {
 
     @Before
     public void before() {
-        drum = new Drum("metal", "Cherry Red", Type.STRING, 3, "model 6", 300, 500, 2);
+        drum = new Drum("metal", "Cherry Red", Type.PERCUSSION, 3, "model 6", 300, 500, 2);
     }
 
     @Test
